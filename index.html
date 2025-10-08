@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KampusSkill - Marketplace Jasa Mahasiswa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#0ea5e9', // sky-500
+              secondary: '#7c3aed', // violet-600
+              dark: '#0f172a', // slate-900
+              light: '#f1f5f9', // slate-100
+            },
+            animation: {
+              'spin-slow': 'spin 3s linear infinite',
+              'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'line-load': 'line-load 1.5s linear infinite',
+            },
+            keyframes: {
+              'line-load': {
+                '0%, 100%': { transform: 'translateX(-100%)' },
+                '50%': { transform: 'translateX(100%)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
+  }
+}
+</script>
+</head>
+  <body class="bg-dark text-light antialiased">
+    <div id="root"></div>
+  </body>
+</html>
