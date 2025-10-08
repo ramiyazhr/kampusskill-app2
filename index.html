@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="id">
   <head>
@@ -11,10 +10,10 @@
         theme: {
           extend: {
             colors: {
-              primary: '#0ea5e9', // sky-500
-              secondary: '#7c3aed', // violet-600
-              dark: '#0f172a', // slate-900
-              light: '#f1f5f9', // slate-100
+              primary: '#0ea5e9',
+              secondary: '#7c3aed',
+              dark: '#0f172a',
+              light: '#f1f5f9',
             },
             animation: {
               'spin-slow': 'spin 3s linear infinite',
@@ -31,17 +30,9 @@
         }
       }
     </script>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.1.1/",
-    "react": "https://aistudiocdn.com/react@^19.1.1",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
-  }
-}
-</script>
-</head>
+  </head>
   <body class="bg-dark text-light antialiased">
     <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
